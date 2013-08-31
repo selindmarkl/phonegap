@@ -34,6 +34,8 @@ var root = this;
 			
 		}
 	}
+	
+};
 
 	function onCloseBrowser()
 	{
@@ -54,5 +56,7 @@ var root = this;
   <body>
   <br>
  <a href="#" onclick="window.plugins.childBrowser.showWebPage('http://www.google.com',{ showLocationBar: true });">Open Google.com in child browser</a>
+ <br>
+ <a href="#" onclick="window.plugins.childBrowser.onOpenExternal = function () {alert('opening Mobile Safari')};"> alert</a>
   </body>
 </html>
